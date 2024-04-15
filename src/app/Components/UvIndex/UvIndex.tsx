@@ -6,6 +6,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import React from "react";
 import { UvProgress } from "../UvProgress/UvProgress";
 
+
 function UvIndex() {
   const { uvIndex } = useGlobalContext();
 

@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { github } from "../utils/Icons";
-import ThemeDropdown from "./ThemeDropdown/ThemeDropdown";
-
 import { useGlobalContext } from "../context/globalContext";
 import SearchDialog from "./SearchDialog/SearchDialog";
+import ThemeDropdown from "./ThemeDropdown/ThemeDropdown";
+
 
 function Navbar() {
   const router = useRouter();
@@ -22,10 +22,10 @@ function Navbar() {
           <ThemeDropdown />
 
           <Button
-            className="source-code-btn flex items-center gap-2"
+            className="source-code-btn flex items-center "
             onClick={() => {
               router.push(
-                "https://github.com/abhishekKumar253/Weather-Application-"
+                "https://github.com/"
               );
             }}>
             {github} Source Code
